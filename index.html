@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Methods</title>
+    <style>
+        body{
+            font-size: 20px;
+            background-color: aqua;
+        }
+        td,h1{
+            text-align: center;
+        }
+        table{
+            border-collapse: collapse;
+            width:90%;
+            margin:auto;
+            background-color :rgb(127, 153, 255);
+            border-color: white;
+            border-radius: 20px;
+        }
+        td{
+            padding:15px;
+        }
+    </style>
+</head>
+<body>
+
+                                                        <!--GET-->
+    <h1>GET</h1>
+    <table border>
+        
+        <thead>
+            <tr>
+                <th>S.NO</th>
+                <th>METHODS</th>
+                <th>USE</th>
+                <th>INPUT</th>
+                <th>PROGRAM</th>
+                <th>OUTPUT</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>getDate</td>
+                <td>Returns the day of the month (1-31) for the specified date according to local time</td>
+                <td>Date.getDate()</td>
+                <td>
+                    let a=new Date();<br>
+                    document.write(a.getDate());
+                </td>
+                <td>27</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>getDay</td>
+                <td>Returns the day of the week (0–6) for the specified date according to local time.</td>
+                <td>Date.getDay()</td>
+                <td>
+                    let a=new Date();<br>
+                    document.write(a.getDay());
+                </td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>getFullYear</td>
+                <td>Returns the year (4 digits for 4-digit years) of the specified date according to local time.</td>
+                <td>Date.getFullYear()</td>
+                <td>
+                    let a=new Date();<br>
+                    document.write(a.getFullYear());
+                </td>
+                <td>2022</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>getHours</td>
+                <td>Returns the hour (0–23) in the specified date according to local time.</td>
+                <td>Date.getHours()</td>
+                <td>
+                    let a=new Date();<br>
+                    document.write(a.getHours());
+                </td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>getMilliseconds</td>
+                <td>Returns the milliseconds (0–999) in the specified date according to local time.</td>
+                <td>Date.getMilliseconds()</td>
+                <td>
+                    let a=new Date();<br>
+                    document.write(a.getMilliseconds());
+                </td>
+                <td>85</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>getMinutes</td>
+                <td>Returns the minutes (0–59) in the specified date according to local time.</td>
+                <td>Date.getMinutes()</td>
+                <td>
+                    let a=new Date();<br>
+                    document.write(a.getMinutes());
+                </td>
+                <td>35</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>getMonths</td>
+                <td>Returns the month (0–11) in the specified date according to local time.</td>
+                <td>Date.getMonth()</td>
+                <td>
+                    let a=new Date();<br>
+                    document.write(a.getMonth());
+                </td>
+                <td>11</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>getSeconds</td>
+                <td>Returns the seconds (0–59) in the specified date according to local time.</td>
+                <td>Date.getSeconds()</td>
+                <td>
+                    let a=new Date();<br>
+                    document.write(a.getSeconds());
+                </td>
+                <td>47</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>getTime</td>
+                <td>Returns the numeric value of the specified date as the number of milliseconds since January 1, 1970, 00:00:00 UTC. (Negative values are returned for prior times.)</td>
+                <td>Date.getTime()</td>
+                <td>
+                    let a=new Date();<br>
+                    document.write(a.getTime());
+                </td>
+                <td>1672153805205</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>getTimezoneOffset</td>
+                <td>Returns the time-zone offset in minutes for the current locale.</td>
+                <td>Date.getTimezoneOffset()</td>
+                <td>
+                    let a=new Date();<br>
+                    document.write(a.getTimezoneOffset());
+                </td>
+                <td>-330</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>getYear</td>
+                <td>Returns the year (usually 2–3 digits) in the specified date according to local time. Use getFullYear()* instead.</td>
+                <td>Date.getYear()</td>
+                <td>
+                    let a=new Date();<br>
+                    document.write(a.getYear());
+                </td>
+                <td>122</td>
+            </tr>
+        </tbody>
+    </table>
+
+                                                        <!--SET-->
+    <h1>SET</h1>
+    <table border>
+        <thead>
+            <tr>
+                <th>S.NO</th>
+                <th>METHODS</th>
+                <th>USE</th>
+                <th>INPUT</th>
+                <th>PROGRAM</th>
+                <th>OUTPUT</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>setDate</td>
+                <td>Sets the day of the month for a specified date according to local time.</td>
+                <td>Date.setDate()</td>
+                <td>
+                    let a=new Date();<br>
+                    document.write(a.setDate(27));
+                </td>
+                <td>27</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>setFullYear</td>
+                <td>Sets the full year (e.g. 4 digits for 4-digit years) for a specified date according to local time.</td>
+                <td>Date.setFullYear(2023)</td>
+                <td>
+                    let a=new Date();<br>
+                    document.write(a.set());
+                </td>
+                <td>2023</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>setHours</td>
+                <td>Sets the hours for a specified date according to local time.</td>
+                <td>Date.setHours()</td>
+                <td>
+                    let a=new Date();<br>
+                    document.write(a.setHours(15));
+                </td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>setMilliseconds</td>
+                <td>Sets the milliseconds for a specified date according to local time.</td>
+                <td>Date.setMIlliseconds()</td>
+                <td>
+                    let a=new Date();<br>
+                    document.write(a.setMilliseconds(90));
+                </td>
+                <td>90</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>setMinutes</td>
+                <td>Sets the minutes for a specified date according to local time.</td>
+                <td>Date.setMinutes()</td>
+                <td>
+                    let a=new Date();<br>
+                    document.write(a.setMinutes(53));
+                </td>
+                <td>53</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>setMOnths</td>
+                <td>Sets the month for a specified date according to local time.</td>
+                <td>Date.setMonths(5)</td>
+                <td>
+                    let a=new Date();<br>
+                    document.write(a.setMonths(5));
+                </td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>setSeconds</td>
+                <td>Sets the seconds for a specified date according to local time.</td>
+                <td>Date.setSeconds()</td>
+                <td>
+                    let a=new DateSeconds();<br>
+                    document.write(a.set(35));
+                </td>
+                <td>35</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>setTime</td>
+                <td>Sets the Date object to the time represented by a number of milliseconds since January 1, 1970, 00:00:00 UTC. Use negative numbers for times prior.</td>
+                <td>Date.setTime()</td>
+                <td>
+                    let a=new Date();<br>
+                    document.write(a.setTime(22));
+                </td>
+                <td>22</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>setYear</td>
+                <td>Sets the year (usually 2–3 digits) for a specified date according to local time. Use setFullYear()* instead.</td>
+                <td>Date.setYear()</td>
+                <td>
+                    let a=new Date();<br>
+                    document.write(a.setYear(123));
+                </td>
+                <td>123</td>
+            </tr>
+        </tbody>
+    </table>
+
+                                                        <!--CONVERT-->
+    <h1>CONVERT</h1>
+    <table border>
+        
+        <thead>
+            <tr>
+                <th>S.NO</th>
+                <th>METHODS</th>
+                <th>USE</th>
+                <th>INPUT</th>
+                <th>PROGRAM</th>
+                <th>OUTPUT</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>toDateString</td>
+                <td>Returns the "date" portion of the Date as a human-readable string like 'Thu Apr 12 2018'.</td>
+                <td>Date.toDateString()</td>
+                <td>
+                    let a=new Date();<br>
+                    document.write(a.toDateString());
+                </td>
+                <td>Wed Dec 28 2022</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>toISOString</td>
+                <td>Converts a date to a string following the ISO 8601 Extended Format.</td>
+                <td>Date.toISOString()</td>
+                <td>
+                    let a=new Date();<br>
+                    document.write(a.toISOString());
+                </td>
+                <td>2022-12-28T02:10:21.610Z</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>toJSON</td>
+                <td>Returns a string representing the Date using toISOString(). Intended for use by JSON.stringify().</td>
+                <td>Date.toJSON()</td>
+                <td>
+                    let a=new Date();<br>
+                    document.write(a.toJSON());
+                </td>
+                <td>2022-12-28T02:10:55.696Z</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>toGMTString</td>
+                <td>Returns a string representing the Date based on the GMT (UTC) time zone. Use toUTCString()* instead.</td>
+                <td>Date.toGMTString()</td>
+                <td>
+                    let a=new Date();<br>
+                    document.write(a.toGMTString());
+                </td>
+                <td>Wed, 28 Dec 2022 02:15:12 GMT</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>toLocaleDateString</td>
+                <td>Returns a string with a locality sensitive representation of the date portion of this date based on system settings.</td>
+                <td>Date.toLocaleDateString()</td>
+                <td>
+                    let a=new Date();<br>
+                    document.write(a.toLocaleDateString());
+                </td>
+                <td>12/28/2022</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>toLocaleString</td>
+                <td>Returns a string with a locality-sensitive representation of this Date. Overrides the Object.prototype.toLocaleString() method.</td>
+                <td>Date.toLocaleString()</td>
+                <td>
+                    let a=new Date();<br>
+                    document.write(a.toLocaleString());
+                </td>
+                <td>12/28/2022, 7:42:38 AM</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>toLocaleTimeString</td>
+                <td>Returns a string with a locality-sensitive representation of the time portion of this date, based on system settings.</td>
+                <td>Date.toLocaleTimeString()</td>
+                <td>
+                    let a=new Date();<br>
+                    document.write(a.toLocaleTimeString());
+                </td>
+                <td>7:43:18 AM</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>toString</td>
+                <td>Returns a string representing the specified Date object. Overrides the Object.prototype.toString()* method.</td>
+                <td>Date.toString()</td>
+                <td>
+                    let a=new Date();<br>
+                    document.write(a.toString());
+                </td>
+                <td>Wed Dec 28 2022 07:44:01 GMT+0530 (India Standard Time</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>toTimeString</td>
+                <td>Returns the "time" portion of the Date as a human-readable string.</td>
+                <td>Date.toTimeString()</td>
+                <td>
+                    let a=new Date();<br>
+                    document.write(a.toTimeString());
+                </td>
+                <td>07:44:34 GMT+0530 (India Standard Time</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>
